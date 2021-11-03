@@ -23,11 +23,11 @@ class MatrixFiller:
             row, col = params.split()
             row, col = int(row), int(col)
 
-            if _row != _col:
+            if row != col:
                 print(errors[1])
                 return main()
 
-            if _row == "1":
+            if row == "1":
                 print(errors[2])
                 return main()
             return row, col
